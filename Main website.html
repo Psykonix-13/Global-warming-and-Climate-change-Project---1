@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Warming & Climate Change</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #00ffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(to bottom right, #001f3f, #001f3f);
+            color: #00ffff;
+            text-align: center;
+            padding: 100px 20px;
+            opacity: 0.9;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        nav {
+            background: #001f3f;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            opacity: 0.9;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: 600;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #00ffff;
+            text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background: #001f3f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            margin-bottom: 40px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s;
+            opacity: 0.9;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(to bottom right, #00ffff, #001f3f);
+        }
+
+        .card h3 {
+            padding: 20px 15px;
+            font-size: 1.5rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        .card p {
+            padding: 0 15px 20px 15px;
+            font-size: 1rem;
+            color: #fff;
+            text-shadow: 0 0 10px #fff;
+        }
+
+        .card a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: 600;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+        }
+
+        footer {
+            background: #001f3f;
+            color: #00ffff;
+            padding: 20px;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        footer a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+        }
+
+        /* Lightcycle Animation */
+        .lightcycle {
+            position: absolute;
+            top: -100px;
+            width: 100%;
+            height: 100px;
+            background-image: url('https://i.imgur.com/5BdF2Nz.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+            animation: lightcycleMove 15s linear infinite;
+        }
+
+        @keyframes lightcycleMove {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lightcycle"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#causes">Causes</a></li>
+                <li><a href="#effects">Effects</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#author">About the Author</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>Global Warming & Climate Change</h1>
+            <p>Understanding the Threat and How We Can Help</p>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Introduction</h2>
+        <div class="container">
+            <div class="card">
+                <h3>What is Global Warming?</h3>
+                <p>Global warming refers to the long-term rise in Earth's average surface temperature due to human activities. 
+                    <a href="https://en.wikipedia.org/wiki/Global_warming" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Why Should We Care?</h3>
+                <p>The impacts of global warming are severe, including rising sea levels, extreme weather, and loss of biodiversity. 
+                    <a href="https://en.wikipedia.org/wiki/Effects_of_global_warming" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>What Can We Do?</h3>
+                <p>We can reduce our carbon footprint, use renewable energy, and support policies aimed at reducing emissions. 
+                    <a href="https://en.wikipedia.org/wiki/Climate_change_mitigation" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="causes">
+        <h2>Causes of Global Warming</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Greenhouse Gases</h3>
+                <p>Greenhouse gases, such as CO2 and methane, trap heat in the atmosphere, leading to global warming. 
+                    <a href="https://en.wikipedia.org/wiki/Greenhouse_gas" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Deforestation</h3>
+                <p>Deforestation reduces the number of trees that absorb CO2, contributing to higher carbon levels in the atmosphere. 
+                    <a href="https://en.wikipedia.org/wiki/Deforestation" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Fossil Fuels</h3>
+                <p>Burning fossil fuels for energy releases large amounts of CO2 and other greenhouse gases. 
+                    <a href="https://en.wikipedia.org/wiki/Fossil_fuel" target="_blank">
+                     Learn more on Wikipedia</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="effects">
+        <h2>Effects of Global Warming</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Rising Sea Levels</h3>
+                <p>Melting ice caps and glaciers contribute to rising sea levels, threatening coastal communities. 
+                    <a href="https://en.wikipedia.org/wiki/Sea_level_rise" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Extreme Weather</h3>
+                <p>Global warming is linked to more frequent and severe weather events, such as hurricanes, droughts, and heatwaves. 
+                    <a href="https://en.wikipedia.org/wiki/Effects_of_global_warming" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Impact on Wildlife</h3>
+                <p>Many species are threatened by habitat loss and changing ecosystems due to global warming. 
+                    <a href="https://en.wikipedia.org/wiki/Climate_change_and_wildlife" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <h2>Solutions to Combat Global Warming</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Renewable Energy</h3>
+                <p>Switching to renewable energy sources like solar and wind can significantly reduce greenhouse gas emissions. 
+                    <a href="https://en.wikipedia.org/wiki/Renewable_energy" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Energy Efficiency</h3>
+                <p>Improving energy efficiency in buildings, transportation, and industries can help lower carbon emissions. 
+                    <a href="https://en.wikipedia.org/wiki/Energy_efficiency" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Reforestation</h3>
+                <p>Planting trees and restoring forests can help absorb CO2 and mitigate climate change. 
+                    <a href="https://en.wikipedia.org/wiki/Reforestation" target="_blank">Learn more on Wikipedia</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="author">
+        <h2>About the Author</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Mohammad Faraz Akhtar</h3>
+                <p>Hi there! I'm Faraz Akhtar. I have a great liking for Computer Science and science. I am 13 years old and live in Jharkhand, India. 
+                   Although I was born in Saudi Arabia and lived there for 9 years, I returned to India 5 years ago.
+                </p>
+                <p>Feel free to reach out to me at <a href="mailto:Farazme2524@gmail.com">Farazme2524@gmail.com</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mohammad Faraz Akhtar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
